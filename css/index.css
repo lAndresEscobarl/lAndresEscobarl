@@ -16,8 +16,15 @@ body
 {
     height: 56px;
     display: grid;
-    grid-template-columns: [c1] 0.1fr [c2] 0.3fr [c3] 1fr [c4] 2fr;
+    grid-template-columns: [c1] 0.1fr [c2] 0.2fr [c3] 1fr [c4] 2fr;
     grid-template-rows: [base] 1fr;
+    border: solid 1px black;
+}
+
+.header > header > nav > div
+{
+    height: 56px;
+    
 }
 
 .header > header > nav > .nav--deploy > img 
@@ -31,6 +38,7 @@ body
 .header > header > nav > .logo
 {
     text-align: center;
+    text-align: left;
 }
 
 .header > header > nav > .logo > img 
@@ -40,6 +48,12 @@ body
     vertical-align: middle;
     border: solid black 1px;
     border-radius: 50%;
+    
+}
+
+.header > header > nav > .name
+{
+    text-align: left;
 }
 
 .header > header > nav > .name > img 
@@ -64,15 +78,17 @@ body
 
 .header > header > nav > .list--nav > ul > li
 {
-   
+   text-align: center;
     padding: 10%;
 }
 
-.header > header > nav > div
+.header > header > nav > .list--nav > ul > li > a
 {
-    height: 56px;
-    border: solid 1px black;
+   text-align: center;
+    
 }
+
+
 
 
 /*
