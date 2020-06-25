@@ -6,17 +6,25 @@ body
     display: grid;
 }
 
-.header
+h1
 {
-
-    height: 56px;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 
+.header
+{
+    border: red 1px solid;
+    
+}
+
+/*=== Header Nav ===*/
 .header > header > nav
 {
     height: 56px;
     display: grid;
-    grid-template-columns: [c1] 0.1fr [c2] 0.2fr [c3] 1fr [c4] 2fr;
+    grid-template-columns: [c1] 0.3fr [c2] 1fr [c3] 4fr [c4] 0.5fr;
     grid-template-rows: [base] 1fr;
     border: solid 1px black;
 }
@@ -24,32 +32,18 @@ body
 .header > header > nav > div
 {
     height: 56px;
-    
+    text-align: center;
 }
 
 .header > header > nav > .nav--deploy > img 
 {
-    max-width:70%;
+    max-width:40%;
     height: 54px;
     vertical-align: middle;
-    margin-left: 10%;
-}
-
-.header > header > nav > .logo
-{
-    text-align: center;
-    text-align: left;
-}
-
-.header > header > nav > .logo > img 
-{
-    max-width:90%;
-    height: 54px;
-    vertical-align: middle;
-    border: solid black 1px;
-    border-radius: 50%;
     
 }
+
+
 
 .header > header > nav > .name
 {
@@ -79,111 +73,81 @@ body
 .header > header > nav > .list--nav > ul > li
 {
    text-align: center;
-    padding: 10%;
+    height: 54px;
+    padding: auto;
+    border: coral 1px solid;
 }
 
 .header > header > nav > .list--nav > ul > li > a
 {
-   text-align: center;
+   font-size: calc(1em + 1vw);
+   margin: auto;
     
 }
 
-
-
-
-/*
-.header 
+.header > header > nav > .logo
 {
-    border: solid violet 1px;
-    width: 100%;
-    height: 56px;
-
-}
-
-/* --  .header--nav  --
-.header--nav
-{
-    
-    border: solid black 1px;
-}
-/* --  .header--nav > nav  --
-.header--nav > nav 
-{
-    border: solid red 1px;
-    display: grid;
-    grid-template-columns: [c1] 0.3fr [cs] 0.3fr [c3] 2fr [c4] 4fr; 
-    grid-template-rows: [base] 1fr;
-    height: auto;
-
-}
-
-.header--nav > nav > div
-{
-    border: solid blue 1px;
-
-
-}
-
-.header--nav > nav > .nav--deploy 
-{
-    box-sizing: border-box;
     text-align: center;
-}
-
-
-
-.header--nav > nav > .logo 
-{
-    box-sizing: border-box;
-
-}
-
-
-
-.header--nav > nav > .name
-{
-    box-sizing: border-box;
-
-}
-
-.header--nav > nav > .name > img 
-{
-    max-width:40%;
-    max-height:40%;
-    vertical-align: middle;
-    
-}
-
-.header--nav > nav > .list--nav
-{
-    box-sizing: border-box;
    
 }
 
-.header--nav > nav > .list--nav > ul
+.header > header > nav > .logo > img 
 {
-    list-style: none;
-    padding-right: 10%;
-    border: solid green 1px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
+    max-width:90%;
+    height: 54px;
+    vertical-align: middle;
+    border: solid black 1px;
+    border-radius: 50%;   
+}
+
+/*=== Header presentation--banner ===*/
+
+.header > header > .presentation--banner
+{
+    border: springgreen 1px solid;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    
+}
+
+.header > header > .presentation--banner > .txt
+{
+    border: springgreen 1px solid;
+    width: auto;
+    height: auto;
+    flex: content; 
+    margin: auto;
+}
+
+.header > header > .presentation--banner > .txt > p
+{
+    font-size: calc(1em + 1vw)
+}
+/*-- header--banner--news --*/
+.header > header > .header--banner--news
+{
+    border: blue 1px solid;
+    height: 150px;
     display: grid;
-    grid-template-columns: [c1] 1fr [cs] 1fr [c3] 1fr [c4] 1fr; 
+    grid-template-columns: [c1] 1fr [c2] 1fr;
     grid-template-rows: [base] 1fr;
-
+    grid-gap: 2rem;
 }
 
-.header--nav > nav > .list--nav > ul > li
+.header > header > .header--banner--news > .banner--new
 {
-    margin: 0% 5% ;
-    border: solid green;
-    text-align: center;    
+    border: blue 1px solid;
+    height: 150px;
+    display: grid;
+    grid-template-columns: [c1] 1fr [c2] 1fr [c3] 1fr;
+    grid-template-rows: [base] 1fr;
 }
 
-.header--nav > nav > .list--nav > ul > li > a
-{
-    font-size: calc(1em + 1vw); 
-    height: 100%;
 
-} */
+.header > header > .header--banner--news > .banner--new > .new
+{
+    border:chocolate 1px solid;
+    height: 150px;
+
+}
